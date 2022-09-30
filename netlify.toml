@@ -1,0 +1,14 @@
+# This allows us to use internal routing and react-router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Publish directory and build command
+[build]
+  publish = "build/"
+  command = "npm run build"
+
+# Stop build from failing due to warnings
+[context.production.environment]
+  CI = "false"
