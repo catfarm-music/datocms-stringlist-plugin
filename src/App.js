@@ -55,9 +55,9 @@ export const App = ({ plugin }) => {
     );
   };
 
-  console.log("plugin", plugin);
+  //console.log("plugin", plugin);
 
-  console.log(plugin.theme);
+  //console.log(plugin.theme);
 
   return (
     <ThemeProvider theme={plugin.theme}>
