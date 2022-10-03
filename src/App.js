@@ -21,6 +21,8 @@ export const App = ({ plugin }) => {
 
   useEffect(() => {
     const value = JSON.stringify(data);
+    
+    console.log(data, value, plugin.getFieldValue(plugin.fieldPath))
 
     // The value is the same as before, do nothing
     if (value === plugin.getFieldValue(plugin.fieldPath)) return;
